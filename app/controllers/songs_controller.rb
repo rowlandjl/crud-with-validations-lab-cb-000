@@ -12,7 +12,7 @@ class SongsController < ApplicationController
   def create
     @song = Song.new(song_params)
 
-    if @song.save 
+    if @song.save
       redirect_to song_path(song_params)
     else
       render :new
@@ -26,10 +26,10 @@ class SongsController < ApplicationController
   end
 
   def udpate
-    if @song.update 
+    if @song.update
       redirect_to song_path(song_params)
-    else 
-      render :edit 
+    else
+      render :edit
     end 
   end
 
