@@ -1,4 +1,7 @@
 <h1>New Song Form</h1>
 
 <%= form_for @song do |f| %>
+  <%= f.text_field :title %>
+
+  <%= f.submit %>
 <% end %>
