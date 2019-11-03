@@ -5,3 +5,4 @@
 <p>Genre: <%= @song.genre %></p>
 
 <%= button_to "edit", edit_song_path(@song) %>
+<%= link_to "Delete", @song, method: :delete %>
