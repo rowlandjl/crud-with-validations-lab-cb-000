@@ -5,13 +5,14 @@ class SongsController < ApplicationController
   end
 
   def new
-    @song = Song.new 
+    @song = Song.new
   end
 
   def create
   end
 
   def show
+    @song = Song.find(params[:id])
   end
 
   def edit
