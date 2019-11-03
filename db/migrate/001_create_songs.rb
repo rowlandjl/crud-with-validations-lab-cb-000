@@ -1,3 +1,3 @@
-class CreateSongs < ActiveRecord::Migration 
+class CreateSongs < ActiveRecord::Migration
 
 end 
