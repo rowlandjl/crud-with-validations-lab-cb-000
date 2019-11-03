@@ -25,12 +25,12 @@ class SongsController < ApplicationController
   def edit
   end
 
-  def udpate
+  def update
     if @song.update
       redirect_to song_path(song_params)
     else
       render :edit
-    end 
+    end
   end
 
   def destroy
