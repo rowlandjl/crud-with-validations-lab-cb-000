@@ -37,7 +37,7 @@ class SongsController < ApplicationController
 
   def destroy
     @song.destroy
-    redirect_to song_url 
+    redirect_to songs_url 
   end
 
   private
