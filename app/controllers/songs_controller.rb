@@ -16,7 +16,7 @@ class SongsController < ApplicationController
       redirect_to song_path(song_params)
     else
       render :new
-    end 
+    end
   end
 
   def show
