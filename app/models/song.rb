@@ -10,5 +10,5 @@ class Song < ApplicationRecord
 
   def current_year
     Date.today.year
-  end 
+  end
 end
