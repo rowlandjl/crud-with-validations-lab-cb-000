@@ -26,6 +26,11 @@ class SongsController < ApplicationController
   end
 
   def udpate
+    if @song.update 
+      redirect_to song_path(song_params)
+    else 
+      render :edit 
+    end 
   end
 
   def destroy
