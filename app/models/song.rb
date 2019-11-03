@@ -6,4 +6,8 @@ class Song < ApplicationRecord
   def released?
     released
   end
+
+  def current_year 
+    Date.today.year 
+  end 
 end
